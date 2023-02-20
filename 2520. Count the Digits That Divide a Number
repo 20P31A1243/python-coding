@@ -1,0 +1,14 @@
+class Solution:
+    def countDigits(self, num: int) -> int:
+        r,c=0,0
+        var=num
+        while(num):
+            r=num%10
+            if(var%r==0):
+                c=c+1
+            num=num//10
+        return c
+        Input: num = 1248
+Output: 4
+Explanation: 1248 is divisible by all of its digits, hence the answer is 4.
+1248/1 ,1248/2,1248/4,1248/8 so o/p is 4
