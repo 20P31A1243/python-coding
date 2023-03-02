@@ -1,0 +1,13 @@
+class Solution:
+    def addToArrayForm(self, num: List[int], k: int) -> List[int]:
+        st=""
+        for i in num:
+            st=st+i
+        num=int(st)+k
+        ans=[]
+        for i in str(num):
+            ans.append(i)
+        return ans
+Input: num = [1,2,0,0], k = 34
+Output: [1,2,3,4]
+Explanation: 1200 + 34 = 1234
